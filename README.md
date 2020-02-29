@@ -1,7 +1,7 @@
 
 
 
-##a fork version for use [code-push-server](https://github.com/lisong/code-push-server.git) and add diff patch feature
+# a fork version for use [code-push-server](https://github.com/lisong/code-push-server.git) and add diff patch feature
 
 ---
 ---
