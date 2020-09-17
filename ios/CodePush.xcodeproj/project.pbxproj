@@ -11,6 +11,20 @@
 		1B23B9141BF9267B000BB2F0 /* RCTConvert+CodePushInstallMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B23B9131BF9267B000BB2F0 /* RCTConvert+CodePushInstallMode.m */; };
 		1B762E901C9A5E9A006EF800 /* CodePushErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B762E8F1C9A5E9A006EF800 /* CodePushErrorUtils.m */; };
 		1BCC09A71CC19EB700DDC0DD /* RCTConvert+CodePushUpdateState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC09A61CC19EB700DDC0DD /* RCTConvert+CodePushUpdateState.m */; };
+		29D708F42513FB6E00038EEB /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708E52513FB6D00038EEB /* DiffMatchPatch.h */; };
+		29D708F52513FB6E00038EEB /* DiffMatchPatchCFUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 29D708E62513FB6D00038EEB /* DiffMatchPatchCFUtilities.c */; };
+		29D708F62513FB6E00038EEB /* JXArcCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708E72513FB6D00038EEB /* JXArcCompatibilityMacros.h */; };
+		29D708F72513FB6E00038EEB /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708E82513FB6D00038EEB /* NSString+UriCompatibility.h */; };
+		29D708F82513FB6E00038EEB /* NSString+JavaSubstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708E92513FB6D00038EEB /* NSString+JavaSubstring.h */; };
+		29D708F92513FB6E00038EEB /* NSMutableDictionary+DMPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708EA2513FB6D00038EEB /* NSMutableDictionary+DMPExtensions.h */; };
+		29D708FA2513FB6E00038EEB /* NSString+UnicharUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D708EB2513FB6D00038EEB /* NSString+UnicharUtilities.m */; };
+		29D708FB2513FB6E00038EEB /* DiffMatchPatchCFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708EC2513FB6D00038EEB /* DiffMatchPatchCFUtilities.h */; };
+		29D708FC2513FB6E00038EEB /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D708ED2513FB6D00038EEB /* DiffMatchPatch.m */; };
+		29D708FD2513FB6E00038EEB /* NSString+JavaSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D708EF2513FB6D00038EEB /* NSString+JavaSubstring.m */; };
+		29D708FE2513FB6E00038EEB /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D708F02513FB6D00038EEB /* NSString+UriCompatibility.m */; };
+		29D708FF2513FB6E00038EEB /* NSString+UnicharUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708F12513FB6D00038EEB /* NSString+UnicharUtilities.h */; };
+		29D709002513FB6E00038EEB /* MinMaxMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D708F22513FB6D00038EEB /* MinMaxMacros.h */; };
+		29D709012513FB6E00038EEB /* NSMutableDictionary+DMPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D708F32513FB6D00038EEB /* NSMutableDictionary+DMPExtensions.m */; };
 		540D20121C7684FE00D6EF41 /* CodePushUpdateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D20111C7684FE00D6EF41 /* CodePushUpdateUtils.m */; };
 		5421FE311C58AD5A00986A55 /* CodePushTelemetryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5421FE301C58AD5A00986A55 /* CodePushTelemetryManager.m */; };
 		5498D8F61D21F14100B5EB43 /* CodePushUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5498D8F51D21F14100B5EB43 /* CodePushUtils.m */; };
@@ -59,19 +73,6 @@
 		81D51F3A1B6181C2000DA084 /* CodePushConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D51F391B6181C2000DA084 /* CodePushConfig.m */; };
 		8482F84C1E24C58300F793DB /* CodePush.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13BE3DEC1AC21097009241FE /* CodePush.h */; };
 		8482F84E1E24C66300F793DB /* CodePush.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BE3DEC1AC21097009241FE /* CodePush.h */; };
-		DA44B1D0214555C600A55AC6 /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C2214555C600A55AC6 /* DiffMatchPatch.h */; };
-		DA44B1D1214555C600A55AC6 /* DiffMatchPatchCFUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1C3214555C600A55AC6 /* DiffMatchPatchCFUtilities.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA44B1D3214555C600A55AC6 /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C5214555C600A55AC6 /* NSString+UriCompatibility.h */; };
-		DA44B1D4214555C600A55AC6 /* NSString+JavaSubstring.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C6214555C600A55AC6 /* NSString+JavaSubstring.h */; };
-		DA44B1D5214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C7214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h */; };
-		DA44B1D6214555C600A55AC6 /* NSString+UnicharUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1C8214555C600A55AC6 /* NSString+UnicharUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA44B1D7214555C600A55AC6 /* DiffMatchPatchCFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C9214555C600A55AC6 /* DiffMatchPatchCFUtilities.h */; };
-		DA44B1D8214555C600A55AC6 /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1CA214555C600A55AC6 /* DiffMatchPatch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA44B1D9214555C600A55AC6 /* NSString+JavaSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1CB214555C600A55AC6 /* NSString+JavaSubstring.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA44B1DA214555C600A55AC6 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1CC214555C600A55AC6 /* NSString+UriCompatibility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA44B1DB214555C600A55AC6 /* NSString+UnicharUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1CD214555C600A55AC6 /* NSString+UnicharUtilities.h */; };
-		DA44B1DC214555C600A55AC6 /* MinMaxMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1CE214555C600A55AC6 /* MinMaxMacros.h */; };
-		DA44B1DD214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1CF214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F85736761F4F03BF00C9C00A /* MF_Base64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = F85736731F4F03BF00C9C00A /* MF_Base64Additions.h */; };
 		F85736771F4F03BF00C9C00A /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F85736741F4F03BF00C9C00A /* MF_Base64Additions.m */; };
 		F886644D1F4AD1EE0036D01B /* JWTAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = F88664151F4AD1EE0036D01B /* JWTAlgorithm.h */; };
@@ -152,6 +153,20 @@
 		1B23B9131BF9267B000BB2F0 /* RCTConvert+CodePushInstallMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+CodePushInstallMode.m"; path = "CodePush/RCTConvert+CodePushInstallMode.m"; sourceTree = "<group>"; };
 		1B762E8F1C9A5E9A006EF800 /* CodePushErrorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushErrorUtils.m; path = CodePush/CodePushErrorUtils.m; sourceTree = "<group>"; };
 		1BCC09A61CC19EB700DDC0DD /* RCTConvert+CodePushUpdateState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+CodePushUpdateState.m"; path = "CodePush/RCTConvert+CodePushUpdateState.m"; sourceTree = "<group>"; };
+		29D708E52513FB6D00038EEB /* DiffMatchPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch.h; sourceTree = "<group>"; };
+		29D708E62513FB6D00038EEB /* DiffMatchPatchCFUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DiffMatchPatchCFUtilities.c; sourceTree = "<group>"; };
+		29D708E72513FB6D00038EEB /* JXArcCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXArcCompatibilityMacros.h; sourceTree = "<group>"; };
+		29D708E82513FB6D00038EEB /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UriCompatibility.h"; sourceTree = "<group>"; };
+		29D708E92513FB6D00038EEB /* NSString+JavaSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaSubstring.h"; sourceTree = "<group>"; };
+		29D708EA2513FB6D00038EEB /* NSMutableDictionary+DMPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DMPExtensions.h"; sourceTree = "<group>"; };
+		29D708EB2513FB6D00038EEB /* NSString+UnicharUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UnicharUtilities.m"; sourceTree = "<group>"; };
+		29D708EC2513FB6D00038EEB /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
+		29D708ED2513FB6D00038EEB /* DiffMatchPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffMatchPatch.m; sourceTree = "<group>"; };
+		29D708EF2513FB6D00038EEB /* NSString+JavaSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JavaSubstring.m"; sourceTree = "<group>"; };
+		29D708F02513FB6D00038EEB /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UriCompatibility.m"; sourceTree = "<group>"; };
+		29D708F12513FB6D00038EEB /* NSString+UnicharUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UnicharUtilities.h"; sourceTree = "<group>"; };
+		29D708F22513FB6D00038EEB /* MinMaxMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMaxMacros.h; sourceTree = "<group>"; };
+		29D708F32513FB6D00038EEB /* NSMutableDictionary+DMPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DMPExtensions.m"; sourceTree = "<group>"; };
 		540D20111C7684FE00D6EF41 /* CodePushUpdateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushUpdateUtils.m; path = CodePush/CodePushUpdateUtils.m; sourceTree = "<group>"; };
 		5421FE301C58AD5A00986A55 /* CodePushTelemetryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushTelemetryManager.m; path = CodePush/CodePushTelemetryManager.m; sourceTree = "<group>"; };
 		5498D8F51D21F14100B5EB43 /* CodePushUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushUtils.m; path = CodePush/CodePushUtils.m; sourceTree = "<group>"; };
@@ -191,19 +206,6 @@
 		54FFEDDF1BF550630061DD23 /* CodePushDownloadHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushDownloadHandler.m; path = CodePush/CodePushDownloadHandler.m; sourceTree = "<group>"; };
 		810D4E6C1B96935000B397E9 /* CodePushPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushPackage.m; path = CodePush/CodePushPackage.m; sourceTree = "<group>"; };
 		81D51F391B6181C2000DA084 /* CodePushConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushConfig.m; path = CodePush/CodePushConfig.m; sourceTree = "<group>"; };
-		DA44B1C2214555C600A55AC6 /* DiffMatchPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch.h; sourceTree = "<group>"; };
-		DA44B1C3214555C600A55AC6 /* DiffMatchPatchCFUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DiffMatchPatchCFUtilities.c; sourceTree = "<group>"; };
-		DA44B1C5214555C600A55AC6 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UriCompatibility.h"; sourceTree = "<group>"; };
-		DA44B1C6214555C600A55AC6 /* NSString+JavaSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaSubstring.h"; sourceTree = "<group>"; };
-		DA44B1C7214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DMPExtensions.h"; sourceTree = "<group>"; };
-		DA44B1C8214555C600A55AC6 /* NSString+UnicharUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UnicharUtilities.m"; sourceTree = "<group>"; };
-		DA44B1C9214555C600A55AC6 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
-		DA44B1CA214555C600A55AC6 /* DiffMatchPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffMatchPatch.m; sourceTree = "<group>"; };
-		DA44B1CB214555C600A55AC6 /* NSString+JavaSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JavaSubstring.m"; sourceTree = "<group>"; };
-		DA44B1CC214555C600A55AC6 /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UriCompatibility.m"; sourceTree = "<group>"; };
-		DA44B1CD214555C600A55AC6 /* NSString+UnicharUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UnicharUtilities.h"; sourceTree = "<group>"; };
-		DA44B1CE214555C600A55AC6 /* MinMaxMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMaxMacros.h; sourceTree = "<group>"; };
-		DA44B1CF214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DMPExtensions.m"; sourceTree = "<group>"; };
 		F85736731F4F03BF00C9C00A /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base64Additions.h; sourceTree = "<group>"; };
 		F85736741F4F03BF00C9C00A /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base64Additions.m; sourceTree = "<group>"; };
 		F85736751F4F03BF00C9C00A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -285,6 +287,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		29D708E42513FB6D00038EEB /* DiffMatchPatch */ = {
+			isa = PBXGroup;
+			children = (
+				29D708E52513FB6D00038EEB /* DiffMatchPatch.h */,
+				29D708E62513FB6D00038EEB /* DiffMatchPatchCFUtilities.c */,
+				29D708E72513FB6D00038EEB /* JXArcCompatibilityMacros.h */,
+				29D708E82513FB6D00038EEB /* NSString+UriCompatibility.h */,
+				29D708E92513FB6D00038EEB /* NSString+JavaSubstring.h */,
+				29D708EA2513FB6D00038EEB /* NSMutableDictionary+DMPExtensions.h */,
+				29D708EB2513FB6D00038EEB /* NSString+UnicharUtilities.m */,
+				29D708EC2513FB6D00038EEB /* DiffMatchPatchCFUtilities.h */,
+				29D708ED2513FB6D00038EEB /* DiffMatchPatch.m */,
+				29D708EF2513FB6D00038EEB /* NSString+JavaSubstring.m */,
+				29D708F02513FB6D00038EEB /* NSString+UriCompatibility.m */,
+				29D708F12513FB6D00038EEB /* NSString+UnicharUtilities.h */,
+				29D708F22513FB6D00038EEB /* MinMaxMacros.h */,
+				29D708F32513FB6D00038EEB /* NSMutableDictionary+DMPExtensions.m */,
+			);
+			name = DiffMatchPatch;
+			path = CodePush/DiffMatchPatch;
+			sourceTree = "<group>";
+		};
 		54A002481C0E2880004C3CEC /* SSZipArchive */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,7 +380,7 @@
 				540D20111C7684FE00D6EF41 /* CodePushUpdateUtils.m */,
 				1B23B9131BF9267B000BB2F0 /* RCTConvert+CodePushInstallMode.m */,
 				1BCC09A61CC19EB700DDC0DD /* RCTConvert+CodePushUpdateState.m */,
-				DA44B1C1214555C600A55AC6 /* DiffMatchPatch */,
+				29D708E42513FB6D00038EEB /* DiffMatchPatch */,
 				F85736711F4F03BF00C9C00A /* Base64 */,
 				F88664111F4AD1EE0036D01B /* JWT */,
 				54A002481C0E2880004C3CEC /* SSZipArchive */,
@@ -371,27 +395,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA44B1C1214555C600A55AC6 /* DiffMatchPatch */ = {
-			isa = PBXGroup;
-			children = (
-				DA44B1C2214555C600A55AC6 /* DiffMatchPatch.h */,
-				DA44B1C3214555C600A55AC6 /* DiffMatchPatchCFUtilities.c */,
-				DA44B1C5214555C600A55AC6 /* NSString+UriCompatibility.h */,
-				DA44B1C6214555C600A55AC6 /* NSString+JavaSubstring.h */,
-				DA44B1C7214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h */,
-				DA44B1C8214555C600A55AC6 /* NSString+UnicharUtilities.m */,
-				DA44B1C9214555C600A55AC6 /* DiffMatchPatchCFUtilities.h */,
-				DA44B1CA214555C600A55AC6 /* DiffMatchPatch.m */,
-				DA44B1CB214555C600A55AC6 /* NSString+JavaSubstring.m */,
-				DA44B1CC214555C600A55AC6 /* NSString+UriCompatibility.m */,
-				DA44B1CD214555C600A55AC6 /* NSString+UnicharUtilities.h */,
-				DA44B1CE214555C600A55AC6 /* MinMaxMacros.h */,
-				DA44B1CF214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.m */,
-			);
-			name = DiffMatchPatch;
-			path = CodePush/DiffMatchPatch;
 			sourceTree = "<group>";
 		};
 		F85736711F4F03BF00C9C00A /* Base64 */ = {
@@ -581,25 +584,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D708F62513FB6E00038EEB /* JXArcCompatibilityMacros.h in Headers */,
 				F88664791F4AD1EE0036D01B /* JWTErrorDescription.h in Headers */,
 				F85736761F4F03BF00C9C00A /* MF_Base64Additions.h in Headers */,
+				29D708FB2513FB6E00038EEB /* DiffMatchPatchCFUtilities.h in Headers */,
 				F88664541F4AD1EE0036D01B /* JWTAlgorithmDataHolder.h in Headers */,
-				DA44B1D7214555C600A55AC6 /* DiffMatchPatchCFUtilities.h in Headers */,
+				29D708F82513FB6E00038EEB /* NSString+JavaSubstring.h in Headers */,
 				F88664501F4AD1EE0036D01B /* JWTAlgorithmNone.h in Headers */,
-				DA44B1D4214555C600A55AC6 /* NSString+JavaSubstring.h in Headers */,
+				29D708F92513FB6E00038EEB /* NSMutableDictionary+DMPExtensions.h in Headers */,
 				F88664671F4AD1EE0036D01B /* JWTClaimsSetSerializer.h in Headers */,
-				DA44B1D5214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h in Headers */,
 				F88664521F4AD1EE0036D01B /* JWTAlgorithmESBase.h in Headers */,
 				F88664781F4AD1EE0036D01B /* JWTDeprecations.h in Headers */,
+				29D708F72513FB6E00038EEB /* NSString+UriCompatibility.h in Headers */,
+				29D709002513FB6E00038EEB /* MinMaxMacros.h in Headers */,
 				F88664631F4AD1EE0036D01B /* JWTClaim.h in Headers */,
-				DA44B1D3214555C600A55AC6 /* NSString+UriCompatibility.h in Headers */,
-				DA44B1DC214555C600A55AC6 /* MinMaxMacros.h in Headers */,
 				F886645A1F4AD1EE0036D01B /* JWTAlgorithmRSBase.h in Headers */,
 				F886645F1F4AD1EE0036D01B /* JWTCryptoKeyExtractor.h in Headers */,
 				F88664651F4AD1EE0036D01B /* JWTClaimsSet.h in Headers */,
-				DA44B1DB214555C600A55AC6 /* NSString+UnicharUtilities.h in Headers */,
+				29D708FF2513FB6E00038EEB /* NSString+UnicharUtilities.h in Headers */,
 				F886644E1F4AD1EE0036D01B /* JWTAlgorithmFactory.h in Headers */,
-				DA44B1D0214555C600A55AC6 /* DiffMatchPatch.h in Headers */,
+				29D708F42513FB6E00038EEB /* DiffMatchPatch.h in Headers */,
 				F886645C1F4AD1EE0036D01B /* JWTRSAlgorithm.h in Headers */,
 				F88664731F4AD1EE0036D01B /* JWTCoding.h in Headers */,
 				F88664581F4AD1EE0036D01B /* JWTAlgorithmHSBase.h in Headers */,
@@ -663,7 +667,7 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Microsoft;
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
@@ -677,11 +681,11 @@
 			};
 			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "CodePush" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
@@ -699,7 +703,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA44B1DA214555C600A55AC6 /* NSString+UriCompatibility.m in Sources */,
 				F88664621F4AD1EE0036D01B /* JWTCryptoSecurity.m in Sources */,
 				F88664701F4AD1EE0036D01B /* JWTCoding+VersionThree.m in Sources */,
 				54A0026D1C0E2880004C3CEC /* aeskey.c in Sources */,
@@ -707,6 +710,7 @@
 				54A0026E1C0E2880004C3CEC /* aestab.c in Sources */,
 				54A002761C0E2880004C3CEC /* mztools.c in Sources */,
 				F886646E1F4AD1EE0036D01B /* JWTCoding+VersionOne.m in Sources */,
+				29D708FD2513FB6E00038EEB /* NSString+JavaSubstring.m in Sources */,
 				1BCC09A71CC19EB700DDC0DD /* RCTConvert+CodePushUpdateState.m in Sources */,
 				54A002781C0E2880004C3CEC /* zip.c in Sources */,
 				F88664661F4AD1EE0036D01B /* JWTClaimsSet.m in Sources */,
@@ -719,13 +723,12 @@
 				54FFEDE01BF550630061DD23 /* CodePushDownloadHandler.m in Sources */,
 				F88664551F4AD1EE0036D01B /* JWTAlgorithmDataHolder.m in Sources */,
 				54A002711C0E2880004C3CEC /* hmac.c in Sources */,
-				DA44B1D6214555C600A55AC6 /* NSString+UnicharUtilities.m in Sources */,
+				29D708FE2513FB6E00038EEB /* NSString+UriCompatibility.m in Sources */,
 				F88664681F4AD1EE0036D01B /* JWTClaimsSetSerializer.m in Sources */,
-				DA44B1D8214555C600A55AC6 /* DiffMatchPatch.m in Sources */,
+				29D708FC2513FB6E00038EEB /* DiffMatchPatch.m in Sources */,
 				54A002721C0E2880004C3CEC /* prng.c in Sources */,
 				5421FE311C58AD5A00986A55 /* CodePushTelemetryManager.m in Sources */,
 				F886646C1F4AD1EE0036D01B /* JWTCoding+ResultTypes.m in Sources */,
-				DA44B1D1214555C600A55AC6 /* DiffMatchPatchCFUtilities.c in Sources */,
 				F88664601F4AD1EE0036D01B /* JWTCryptoKeyExtractor.m in Sources */,
 				F88664571F4AD1EE0036D01B /* JWTAlgorithmDataHolderChain.m in Sources */,
 				54A002731C0E2880004C3CEC /* pwd2key.c in Sources */,
@@ -734,11 +737,13 @@
 				54A0026F1C0E2880004C3CEC /* entropy.c in Sources */,
 				13BE3DEE1AC21097009241FE /* CodePush.m in Sources */,
 				54A0026C1C0E2880004C3CEC /* aescrypt.c in Sources */,
+				29D708FA2513FB6E00038EEB /* NSString+UnicharUtilities.m in Sources */,
+				29D709012513FB6E00038EEB /* NSMutableDictionary+DMPExtensions.m in Sources */,
 				F85736771F4F03BF00C9C00A /* MF_Base64Additions.m in Sources */,
 				F88664641F4AD1EE0036D01B /* JWTClaim.m in Sources */,
+				29D708F52513FB6E00038EEB /* DiffMatchPatchCFUtilities.c in Sources */,
 				F88664741F4AD1EE0036D01B /* JWTCoding.m in Sources */,
 				1B762E901C9A5E9A006EF800 /* CodePushErrorUtils.m in Sources */,
-				DA44B1DD214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.m in Sources */,
 				54A002701C0E2880004C3CEC /* fileenc.c in Sources */,
 				F886645B1F4AD1EE0036D01B /* JWTAlgorithmRSBase.m in Sources */,
 				F886647A1F4AD1EF0036D01B /* JWTErrorDescription.m in Sources */,
@@ -748,7 +753,6 @@
 				F88664511F4AD1EE0036D01B /* JWTAlgorithmNone.m in Sources */,
 				5498D8F61D21F14100B5EB43 /* CodePushUtils.m in Sources */,
 				810D4E6D1B96935000B397E9 /* CodePushPackage.m in Sources */,
-				DA44B1D9214555C600A55AC6 /* NSString+JavaSubstring.m in Sources */,
 				F88664531F4AD1EE0036D01B /* JWTAlgorithmESBase.m in Sources */,
 				F88664721F4AD1EE0036D01B /* JWTCoding+VersionTwo.m in Sources */,
 			);
@@ -792,6 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -845,6 +850,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

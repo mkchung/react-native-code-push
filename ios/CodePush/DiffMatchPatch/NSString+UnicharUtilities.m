@@ -1,7 +1,8 @@
 /*
  * Diff Match and Patch
- * Copyright 2018 The diff-match-patch Authors.
- * https://github.com/google/diff-match-patch
+ *
+ * Copyright 2010 geheimwerk.de.
+ * http://code.google.com/p/google-diff-match-patch/
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +21,7 @@
  */
 
 #import "NSString+UnicharUtilities.h"
+#import "JXArcCompatibilityMacros.h"
 
 
 @implementation NSString (UnicharUtilities)
@@ -27,8 +29,7 @@
 + (NSString *)diff_stringFromUnichar:(unichar)ch;
 {
   CFStringRef c = CFStringCreateWithCharacters(kCFAllocatorDefault, &ch, 1);
-  CFMakeCollectable(c);
-  return [(NSString *)c autorelease];
+  return JX_TRANSFER_CF_TO_OBJC(NSString *, c);
 }
 
 - (NSString *)diff_substringWithCharacterAtIndex:(NSUInteger)anIndex;

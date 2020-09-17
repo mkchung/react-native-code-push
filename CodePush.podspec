@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.preserve_paths = '*.js'
   s.library        = 'z'
-  s.source_files = 'ios/CodePush/*.{h,m}', 'ios/CodePush/DiffMatchPatch/*.{h,m}'
+  s.source_files = 'ios/CodePush/*.{h,m}', 'ios/CodePush/DiffMatchPatch/*.{h,m,c}'
   s.public_header_files = ['ios/CodePush/CodePush.h']
 
   # Note: Even though there are copy/pasted versions of some of these dependencies in the repo,

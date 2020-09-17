@@ -1,7 +1,8 @@
 /*
  * Diff Match and Patch
- * Copyright 2018 The diff-match-patch Authors.
- * https://github.com/google/diff-match-patch
+ *
+ * Copyright 2010 geheimwerk.de.
+ * http://code.google.com/p/google-diff-match-patch/
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,14 +23,14 @@
 #import "NSString+JavaSubstring.h"
 
 #import "DiffMatchPatchCFUtilities.h"
+#import "JXArcCompatibilityMacros.h"
 
 @implementation NSString (JavaSubstring)
 
 - (NSString *)diff_javaSubstringFromStart:(NSUInteger)start toEnd:(NSUInteger)end;
 {
-  CFStringRef c = diff_CFStringCreateJavaSubstring((CFStringRef)self, (CFIndex)start, (CFIndex)end);
-  CFMakeCollectable(c);
-  return [(NSString *)c autorelease];
+  CFStringRef c = diff_CFStringCreateJavaSubstring(JX_BRIDGED_CAST(CFStringRef, self), (CFIndex)start, (CFIndex)end);
+  return JX_TRANSFER_CF_TO_OBJC(NSString *, c);
 }
 
 @end
