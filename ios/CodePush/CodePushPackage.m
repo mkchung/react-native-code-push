@@ -1,6 +1,6 @@
 #import "CodePush.h"
 #import "SSZipArchive.h"
-#import <DiffMatchPatch/DiffMatchPatch.h>
+#import "DiffMatchPatch.h"
 
 @implementation CodePushPackage
 

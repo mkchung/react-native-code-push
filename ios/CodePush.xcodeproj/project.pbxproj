@@ -61,7 +61,6 @@
 		8482F84E1E24C66300F793DB /* CodePush.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BE3DEC1AC21097009241FE /* CodePush.h */; };
 		DA44B1D0214555C600A55AC6 /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C2214555C600A55AC6 /* DiffMatchPatch.h */; };
 		DA44B1D1214555C600A55AC6 /* DiffMatchPatchCFUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = DA44B1C3214555C600A55AC6 /* DiffMatchPatchCFUtilities.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA44B1D2214555C600A55AC6 /* DiffMatchPatch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C4214555C600A55AC6 /* DiffMatchPatch_Prefix.pch */; };
 		DA44B1D3214555C600A55AC6 /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C5214555C600A55AC6 /* NSString+UriCompatibility.h */; };
 		DA44B1D4214555C600A55AC6 /* NSString+JavaSubstring.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C6214555C600A55AC6 /* NSString+JavaSubstring.h */; };
 		DA44B1D5214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44B1C7214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h */; };
@@ -194,7 +193,6 @@
 		81D51F391B6181C2000DA084 /* CodePushConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePushConfig.m; path = CodePush/CodePushConfig.m; sourceTree = "<group>"; };
 		DA44B1C2214555C600A55AC6 /* DiffMatchPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch.h; sourceTree = "<group>"; };
 		DA44B1C3214555C600A55AC6 /* DiffMatchPatchCFUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DiffMatchPatchCFUtilities.c; sourceTree = "<group>"; };
-		DA44B1C4214555C600A55AC6 /* DiffMatchPatch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch_Prefix.pch; sourceTree = "<group>"; };
 		DA44B1C5214555C600A55AC6 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UriCompatibility.h"; sourceTree = "<group>"; };
 		DA44B1C6214555C600A55AC6 /* NSString+JavaSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaSubstring.h"; sourceTree = "<group>"; };
 		DA44B1C7214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DMPExtensions.h"; sourceTree = "<group>"; };
@@ -347,7 +345,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				DA44B1C1214555C600A55AC6 /* DiffMatchPatch */,
 				5498D8F51D21F14100B5EB43 /* CodePushUtils.m */,
 				13BE3DEC1AC21097009241FE /* CodePush.h */,
 				13BE3DED1AC21097009241FE /* CodePush.m */,
@@ -359,6 +356,7 @@
 				540D20111C7684FE00D6EF41 /* CodePushUpdateUtils.m */,
 				1B23B9131BF9267B000BB2F0 /* RCTConvert+CodePushInstallMode.m */,
 				1BCC09A61CC19EB700DDC0DD /* RCTConvert+CodePushUpdateState.m */,
+				DA44B1C1214555C600A55AC6 /* DiffMatchPatch */,
 				F85736711F4F03BF00C9C00A /* Base64 */,
 				F88664111F4AD1EE0036D01B /* JWT */,
 				54A002481C0E2880004C3CEC /* SSZipArchive */,
@@ -380,7 +378,6 @@
 			children = (
 				DA44B1C2214555C600A55AC6 /* DiffMatchPatch.h */,
 				DA44B1C3214555C600A55AC6 /* DiffMatchPatchCFUtilities.c */,
-				DA44B1C4214555C600A55AC6 /* DiffMatchPatch_Prefix.pch */,
 				DA44B1C5214555C600A55AC6 /* NSString+UriCompatibility.h */,
 				DA44B1C6214555C600A55AC6 /* NSString+JavaSubstring.h */,
 				DA44B1C7214555C600A55AC6 /* NSMutableDictionary+DMPExtensions.h */,
@@ -597,7 +594,6 @@
 				F88664631F4AD1EE0036D01B /* JWTClaim.h in Headers */,
 				DA44B1D3214555C600A55AC6 /* NSString+UriCompatibility.h in Headers */,
 				DA44B1DC214555C600A55AC6 /* MinMaxMacros.h in Headers */,
-				DA44B1D2214555C600A55AC6 /* DiffMatchPatch_Prefix.pch in Headers */,
 				F886645A1F4AD1EE0036D01B /* JWTAlgorithmRSBase.h in Headers */,
 				F886645F1F4AD1EE0036D01B /* JWTCryptoKeyExtractor.h in Headers */,
 				F88664651F4AD1EE0036D01B /* JWTClaimsSet.h in Headers */,
@@ -684,6 +680,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
