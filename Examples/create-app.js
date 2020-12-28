@@ -48,6 +48,17 @@ const reactNativeVersion = args[1] || `react-native@${execCommand('npm view reac
 const reactNativeVersionIsLowerThanV049 = isReactNativeVersionLowerThan(49);
 const reactNativeCodePushVersion = args[2] || `react-native-code-push@${execCommand('npm view react-native-code-push version')}`.trim();
 
+if (!isReactNativeVersionLowerThan(60) && process.platform === "darwin") {
+    try {
+        console.log("Verify that CocoaPods installed");
+        execCommand("pod --version");
+        console.log("CocoaPods has installed");
+    } catch {
+        console.error(`'CocoaPods' are required to run the script, you can install it with\n'sudo gem install cocoapods'\ncommand`);
+        process.exit();
+    }
+}
+
 console.log(`App name: ${appName}`);
 console.log(`React Native version: ${reactNativeVersion}`);
 console.log(`React Native Module for CodePush version: ${reactNativeCodePushVersion} \n`);
@@ -72,13 +83,18 @@ linkCodePush(androidStagingDeploymentKey, iosStagingDeploymentKey);
 function createCodePushApp(name, os) {
     try {
         console.log(`Creating CodePush app "${name}" to release updates for ${os}...`);
-        const appResult = execCommand(`appcenter apps create -d ${name} -n ${name} -o ${os} -p React-Native --output json`);
-        const app = JSON.parse(appResult);
-        owner = app.owner.name;
-        console.log(`App "${name}" has been created \n`);
+        try {
+            const appResult = execCommand(`appcenter apps create -d ${name} -n ${name} -o ${os} -p React-Native --output json`);
+            const app = JSON.parse(appResult);
+            owner = app.owner.name;
+            console.log(`App "${name}" has been created \n`);
+        } catch(e) {
+            console.log("Error: ", e);
+            console.log(`Please check that you haven't application with "${name}" name on portal`);
+        }
         execCommand(`appcenter codepush deployment add -a ${owner}/${name} Staging`);
     } catch (e) {
-        console.log(`App "${name}" already exists \n`);
+        console.log("Error", e);
     }
     const deploymentKeysResult = execCommand(`appcenter codepush deployment list -a ${owner}/${name} -k --output json`);
     const deploymentKeys = JSON.parse(deploymentKeysResult);
